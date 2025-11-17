@@ -17,18 +17,6 @@
 
 Official instructions to install Tensorflow: https://www.tensorflow.org/install/pip
 
-## Data Download
-
-This is needed for the Lab on Simpsons classification.
-
-Download the file "data.zip" from MS Teams and unzip it into the directory where you have copied your notebooks:
-
-	...
-	data.zip
-	data/
-	04_1_simpsons_datagen.ipynb
-	...
-
 ## Create Environment
 
 ### Automatic
