@@ -1,0 +1,25 @@
+name: cas_main_dl_gpu
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - jupyterlab
+  - jupyterlab_widgets
+  - ipywidgets
+  - matplotlib
+  - pip:
+    - tensorflow[and-cuda]==2.16.1 # GPU
+    - scikit-image==0.24.0
+    - scikit-learn==1.5.2
+    - numpy==1.26.4
+    - tqdm
+    - pandas
+    - wget
+  # for new stuff
+  #  - keras
+  # uncomment the following line for CPU only (no GPU)
+  # - --extra-index-url https://download.pytorch.org/whl/cpu
+  #  - torch==2.9.1
+  #  - torchvision==0.24.1
+  # Add more dependencies as needed
