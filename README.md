@@ -17,15 +17,32 @@
 
 Official instructions to install Tensorflow: https://www.tensorflow.org/install/pip
 
-## Create Environment
+## Automatic Environment Setup
 
-### Automatic
+### CPU
 
 	conda env create -f env.yaml
 
-This will create the conda environment "cas_main_dl" and install the required packages, as specified in the file "env.yaml".
+This will create the conda environment "cas_main_dl" and install the required packages, as specified in the file "env.yaml" (CPU only).
 
-### Manual
+### GPU 
+
+**A. for labs XXX-XXX**
+
+conda env create -f env_gpu.yaml
+
+	# Create symbolic links to NVIDIA shared libraries:
+	pushd $(dirname $(python -c 'print(__import__("tensorflow").__file__)'))
+	ln -svf ../nvidia/*/lib/*.so* .
+	popd
+
+For detailed installation instructions, see https://www.tensorflow.org/install/pip
+
+**B. for Labs XXX,XXX:**
+
+	conda env create -f env_gpu2.yaml
+
+### Manual Setup
 
 	# create and activate env
     conda create -n cas_main_dl python=3.10
@@ -39,9 +56,6 @@ This will create the conda environment "cas_main_dl" and install the required pa
 
 	# install other packages (check versions above)
 	pip install wget notebook matplotlib pandas tqdm ipywidgets scikit-learn scikit-image
-		
-For detailed installation instructions, see https://www.tensorflow.org/install/pip
-
 
 ## Run directly in Colab
 
