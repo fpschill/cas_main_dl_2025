@@ -60,9 +60,11 @@ For detailed installation instructions, see https://www.tensorflow.org/install/p
 
 ## Run directly in Colab
 
-If you have forked the repository, you can run a notebook directly in Google Colab by using a link like this:
+In the Notebook, clink on this link to open it in Colab directly: ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)
 
-https://colab.research.google.com/github/(YOUR_GITHUB_ID)/cas_main_dl_2024/blob/master/01_mnist.ipynb
+Or, if you have forked the repository, you can run a notebook directly in Google Colab by using a link like this:
+
+https://colab.research.google.com/github/(YOUR_GITHUB_ID)/cas_main_dl_2025/blob/master/01_mnist.ipynb
 
 ## Prepare Tensorflow with GPU on WSL2 (Windows Subsystem for Linux)
 
