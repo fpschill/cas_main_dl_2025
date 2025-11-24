@@ -5,3 +5,6 @@ data.zip
 data/
 .ipynb_checkpoints/
 *.h5
+*.png
+*.gif
+celeba_gan/

@@ -16,6 +16,8 @@ dependencies:
     - tqdm
     - pandas
     - wget
+    - gdown
+    - opencv-python
   # for new stuff
   #  - keras
   # uncomment the following line for CPU only (no GPU)
