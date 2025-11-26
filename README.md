@@ -27,7 +27,7 @@ This will create the conda environment "cas_main_dl" and install the required pa
 
 ### GPU 
 
-**A. for labs 1,2,3,4 and 7**
+**A. for labs 1,2,3,4,7,8**
 
 	conda env create -f env_gpu.yaml
 
@@ -39,7 +39,7 @@ Create symbolic links to NVIDIA shared libraries:
 
 For detailed installation instructions, see https://www.tensorflow.org/install/pip
 
-**B. for Labs 5 and 9**
+**B. for Labs 5,9**
 
 	conda env create -f env_gpu2.yaml
 
